@@ -281,14 +281,24 @@ img{
 
 .node-card{
     position:absolute;
-    right:6px;
-    bottom:7px;
-    width:190px;
-    padding:10px 12px;
-    border:1px solid rgba(59,69,143,.22);
-    border-radius:12px;
+
+    left:50%;
+    bottom:-110px;
+
+    transform:translateX(-50%);
+
+    width:320px;
+
+    padding:14px 18px;
+
     background:rgba(255,255,255,.95);
+
+    border:1px solid rgba(59,69,143,.22);
+    border-radius:14px;
+
     box-shadow:0 12px 30px rgba(45,49,71,.12);
+
+    z-index:10;
 }
 
 .node-card h2{
@@ -657,12 +667,12 @@ footer{
 
 @media(max-width:1100px){
 
-    .hero{
-        grid-template-columns:1fr 1.15fr;
-        height:auto;
-        min-height:calc(100vh - 84px);
-        overflow:visible;
-    }
+.hero{
+    grid-template-columns:
+        360px
+        1fr
+        420px;
+}
 
     .hero-copy{
         grid-column:1/-1;

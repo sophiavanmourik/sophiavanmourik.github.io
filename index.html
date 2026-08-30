@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sophia Van Mourik bridges polymer science, industry and science communication.">
+  <title>Sophia Van Mourik</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/network.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo-link" href="index.html" aria-label="Sophia Van Mourik home"><img src="images/logo.png" alt="SVM signature logo"></a>
+    <button class="menu-button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" aria-label="Main navigation">
+      <a href="#research">Research &amp; Publications</a><span aria-hidden="true">|</span>
+      <a href="#comms">Science Comms</a><span aria-hidden="true">|</span>
+      <a href="#illustration">Freelance Illustrator</a><span aria-hidden="true">|</span>
+      <a href="#outreach">Outreach</a><span aria-hidden="true">|</span>
+      <a href="#industry">Industry &amp; Collaboration</a><span aria-hidden="true">|</span>
+      <a href="#social">Social Media</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title"><span>Bridging polymer science, industry</span><br><span>and communication.</span></h1>
+        <p>Explore an evolving professional network inspired by a crosslinked polymer.<br>Hover, focus or tap a node to follow the connections.</p>
+        <div class="filters" aria-label="Filter the professional network">
+          <button class="filter active" data-filter="all">Complete network</button>
+          <button class="filter" data-filter="research">Research</button>
+          <button class="filter" data-filter="industry">Industry</button>
+          <button class="filter" data-filter="communication">Communication</button>
+          <button class="filter" data-filter="leadership">Leadership</button>
+        </div>
+      </div>
+
+      <div class="network-wrap">
+        <svg id="network" viewBox="0 0 690 510" role="img" aria-labelledby="network-title network-description">
+          <title id="network-title">Crosslinked professional network</title>
+          <desc id="network-description">An interactive polymer network connecting research, industry, science communication and leadership.</desc>
+          <g class="bonds" aria-hidden="true">
+            <path data-from="sophia" data-to="recycling" d="M330 255 Q250 165 165 145"/>
+            <path data-from="sophia" data-to="analytics" d="M330 255 Q430 160 505 145"/>
+            <path data-from="sophia" data-to="industry" d="M330 255 Q480 260 550 275"/>
+            <path data-from="sophia" data-to="comms" d="M330 255 Q250 345 175 370"/>
+            <path data-from="sophia" data-to="leadership" d="M330 255 Q420 365 475 405"/>
+            <path data-from="recycling" data-to="healthcare" d="M165 145 Q100 150 65 205"/>
+            <path data-from="recycling" data-to="pc" d="M165 145 Q215 75 265 85"/>
+            <path data-from="recycling" data-to="industry" d="M165 145 Q360 310 550 275"/>
+            <path data-from="analytics" data-to="automation" d="M505 145 Q400 65 360 85"/>
+            <path data-from="analytics" data-to="maldi" d="M505 145 Q575 90 625 145"/>
+            <path data-from="pc" data-to="automation" d="M265 85 Q310 55 360 85"/>
+            <path data-from="comms" data-to="illustration" d="M175 370 Q95 365 70 430"/>
+            <path data-from="comms" data-to="leadership" d="M175 370 Q330 455 475 405"/>
+            <path data-from="industry" data-to="translation" d="M550 275 Q615 315 590 365"/>
+            <path data-from="translation" data-to="leadership" d="M590 365 Q545 420 475 405"/>
+            <path data-from="leadership" data-to="coaching" d="M475 405 Q435 465 385 465"/>
+          </g>
+          <g class="nodes">
+            <g class="node core" id="sophia" data-category="all" data-title="Sophia: the crosslinker" data-text="Connecting polymer science, analytical chemistry, industry translation and public engagement." tabindex="0" role="button"><circle cx="330" cy="255" r="63"/><circle class="outer-ring" cx="330" cy="255" r="74"/><text x="330" y="250">Sophia</text><text x="330" y="271">CROSSLINKER</text></g>
+            <g class="node research" id="recycling" data-category="research" data-title="Polymer recycling" data-text="Circular materials, recycling workflows and additive fate across polymer lifecycles." tabindex="0" role="button"><circle cx="165" cy="145" r="46"/><text x="165" y="141">Polymer</text><text x="165" y="158">recycling</text></g>
+            <g class="node research" id="pc" data-category="research" data-title="Polycarbonate" data-text="Tracking additives and degradation products through recycling cycles." tabindex="0" role="button"><circle cx="265" cy="85" r="31"/><text x="265" y="90">PC</text></g>
+            <g class="node research" id="automation" data-category="research" data-title="Data automation" data-text="Reproducible workflows for spectral processing, visualisation and reporting." tabindex="0" role="button"><circle cx="360" cy="85" r="34"/><text x="360" y="81">Data</text><text x="360" y="97">automation</text></g>
+            <g class="node research" id="analytics" data-category="research" data-title="Analytical science" data-text="Mass spectrometry, NMR and selective extraction for complex polymer systems." tabindex="0" role="button"><circle cx="505" cy="145" r="45"/><text x="505" y="141">Analytical</text><text x="505" y="158">science</text></g>
+            <g class="node research small" id="maldi" data-category="research" data-title="MALDI-MS" data-text="Peak detection, KMD analysis and polymer additive identification." tabindex="0" role="button"><circle cx="625" cy="145" r="32"/><text x="625" y="150">MALDI-MS</text></g>
+            <g class="node research small" id="healthcare" data-category="research industry" data-title="Healthcare plastics" data-text="Circular opportunities and material challenges in healthcare plastic waste." tabindex="0" role="button"><circle cx="65" cy="205" r="31"/><text x="65" y="200">Healthcare</text><text x="65" y="216">plastics</text></g>
+            <g class="node industry" id="industry" data-category="industry" data-title="Industry collaboration" data-text="Turning academic evidence into practical materials and circularity decisions." tabindex="0" role="button"><circle cx="550" cy="275" r="47"/><text x="550" y="271">Industry</text><text x="550" y="288">collaboration</text></g>
+            <g class="node industry small" id="translation" data-category="industry communication" data-title="Translation to practice" data-text="A crosslink between evidence, communication and industrial application." tabindex="0" role="button"><circle cx="590" cy="365" r="34"/><text x="590" y="360">Translation</text><text x="590" y="376">to practice</text></g>
+            <g class="node communication" id="comms" data-category="communication" data-title="Science communication" data-text="Making polymer science accessible through visual storytelling and engagement." tabindex="0" role="button"><circle cx="175" cy="370" r="47"/><text x="175" y="366">Science</text><text x="175" y="383">communication</text></g>
+            <g class="node communication small" id="illustration" data-category="communication" data-title="Scientific illustration" data-text="Illustration, educational resources and creative science storytelling." tabindex="0" role="button"><circle cx="70" cy="430" r="32"/><text x="70" y="425">Scientific</text><text x="70" y="441">illustration</text></g>
+            <g class="node leadership" id="leadership" data-category="leadership" data-title="Leadership" data-text="Coaching, mentoring and team development beyond the laboratory." tabindex="0" role="button"><circle cx="475" cy="405" r="45"/><text x="475" y="410">Leadership</text></g>
+            <g class="node leadership small" id="coaching" data-category="leadership" data-title="Coaching" data-text="Tactical development, mentoring and inclusive team leadership." tabindex="0" role="button"><circle cx="385" cy="465" r="31"/><text x="385" y="470">Coaching</text></g>
+          </g>
+        </svg>
+        <aside id="node-card" class="node-card" aria-live="polite"><span>WELCOME</span><h2>The network</h2><p>Choose a node to reveal its crosslinks.</p></aside>
+      </div>
+
+      <div class="character-wrap"><img src="images/cartoon-girl.png" alt="Illustrated character presenting the professional network"></div>
+    </section>
+
+    <section class="coming-next" aria-label="Portfolio sections">
+      <p>Scroll to explore</p><span aria-hidden="true">↓</span>
+      <div class="anchor-targets"><div id="research"></div><div id="comms"></div><div id="illustration"></div><div id="outreach"></div><div id="industry"></div><div id="social"></div></div>
+    </section>
+  </main>
+</body>
+</html>

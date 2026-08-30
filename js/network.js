@@ -1,1 +1,1 @@
-
+console.log("Network loaded");

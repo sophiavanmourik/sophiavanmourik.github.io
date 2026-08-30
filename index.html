@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sophia Van Mourik: polymer recycling, analytical science, collaboration and science communication.">
+  <title>Sophia Van Mourik | Crosslinked Connections</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/network.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="#top" aria-label="Home"><img src="images/logo.png" alt="SVM logo"></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+  <nav id="main-nav" aria-label="Main navigation">
+    <a href="#network">Network</a><a href="#timeline">Projects</a><a href="#about">About</a>
+  </nav>
+</header>
+<main id="top">
+<section class="hero" id="network" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow">Crosslinked connections</p>
+    <h1 id="hero-title">Bridging polymer science, industry and communication.</h1>
+    <p class="intro">Explore an evolving professional network inspired by a crosslinked polymer. Hover, focus or tap a node to follow the connections.</p>
+    <div class="filters" aria-label="Filter network">
+      <button class="filter active" data-filter="all">Complete network</button>
+      <button class="filter" data-filter="research">Research</button>
+      <button class="filter" data-filter="industry">Industry</button>
+      <button class="filter" data-filter="communication">Communication</button>
+      <button class="filter" data-filter="leadership">Leadership</button>
+    </div>
+  </div>
+
+  <div class="network-shell">
+    <svg id="polymer-network" viewBox="0 0 720 500" role="img" aria-labelledby="network-title network-desc">
+      <title id="network-title">Sophia Van Mourik professional polymer network</title>
+      <desc id="network-desc">Interactive network connecting research, industry, communication and leadership.</desc>
+      <g class="bonds" aria-hidden="true">
+        <path data-from="sophia" data-to="recycling" d="M350 245 Q255 150 170 135"/><path data-from="sophia" data-to="analytics" d="M350 245 Q445 145 535 140"/>
+        <path data-from="sophia" data-to="industry" d="M350 245 Q485 250 575 280"/><path data-from="sophia" data-to="communication" d="M350 245 Q270 365 175 373"/>
+        <path data-from="sophia" data-to="leadership" d="M350 245 Q425 370 470 405"/><path data-from="recycling" data-to="healthcare" d="M170 135 Q95 155 65 218"/>
+        <path data-from="recycling" data-to="pc" d="M170 135 Q235 68 285 78"/><path data-from="analytics" data-to="maldi" d="M535 140 Q620 105 660 158"/>
+        <path data-from="analytics" data-to="data" d="M535 140 Q430 65 380 83"/><path data-from="industry" data-to="translation" d="M575 280 Q635 330 608 374"/>
+        <path data-from="communication" data-to="illustration" d="M175 373 Q100 390 75 445"/><path data-from="leadership" data-to="coaching" d="M470 405 Q430 465 382 458"/>
+        <path data-from="communication" data-to="leadership" d="M175 373 Q320 445 470 405"/><path data-from="translation" data-to="leadership" d="M608 374 Q550 425 470 405"/>
+        <path data-from="recycling" data-to="industry" d="M170 135 Q355 325 575 280"/><path data-from="pc" data-to="data" d="M285 78 Q335 50 380 83"/>
+      </g>
+      <g class="nodes">
+        <g class="node core" id="sophia" data-category="all" data-title="Sophia Van Mourik" data-text="Connecting polymer recycling, analytical chemistry, industry translation and science communication." tabindex="0" role="button"><circle cx="350" cy="245" r="58"/><circle class="ring" cx="350" cy="245" r="68"/><text x="350" y="240">Sophia</text><text class="node-sub" x="350" y="262">crosslinker</text></g>
+        <g class="node research" id="recycling" data-category="research" data-title="Polymer Recycling" data-text="Circular materials, recycling workflows and additive fate." tabindex="0" role="button"><circle cx="170" cy="135" r="43"/><text x="170" y="131">Polymer</text><text x="170" y="148">recycling</text></g>
+        <g class="node research" id="analytics" data-category="research" data-title="Analytical Science" data-text="Mass spectrometry, NMR and extraction for polymer systems." tabindex="0" role="button"><circle cx="535" cy="140" r="43"/><text x="535" y="136">Analytical</text><text x="535" y="153">science</text></g>
+        <g class="node industry" id="industry" data-category="industry" data-title="Industry Collaboration" data-text="Translating evidence into practical materials decisions." tabindex="0" role="button"><circle cx="575" cy="280" r="45"/><text x="575" y="276">Industry</text><text x="575" y="293">collaboration</text></g>
+        <g class="node communication" id="communication" data-category="communication" data-title="Science Communication" data-text="Accessible science through illustration, education and engagement." tabindex="0" role="button"><circle cx="175" cy="373" r="45"/><text x="175" y="369">Science</text><text x="175" y="386">communication</text></g>
+        <g class="node leadership" id="leadership" data-category="leadership" data-title="Leadership" data-text="Coaching, mentoring and team development." tabindex="0" role="button"><circle cx="470" cy="405" r="40"/><text x="470" y="410">Leadership</text></g>
+        <g class="node research small" id="healthcare" data-category="research industry" data-title="Healthcare Plastics" data-text="Circular opportunities for healthcare polymers." tabindex="0" role="button"><circle cx="65" cy="218" r="29"/><text x="65" y="214">Healthcare</text><text x="65" y="229">plastics</text></g>
+        <g class="node research small" id="pc" data-category="research" data-title="Polycarbonate" data-text="Additive tracking across recycling cycles." tabindex="0" role="button"><circle cx="285" cy="78" r="28"/><text x="285" y="83">PC</text></g>
+        <g class="node research small" id="data" data-category="research" data-title="Data Automation" data-text="Reproducible spectral workflows and reporting." tabindex="0" role="button"><circle cx="380" cy="83" r="30"/><text x="380" y="79">Data</text><text x="380" y="94">automation</text></g>
+        <g class="node research small" id="maldi" data-category="research" data-title="MALDI-MS" data-text="Peak detection, KMD analysis and additive identification." tabindex="0" role="button"><circle cx="660" cy="158" r="29"/><text x="660" y="163">MALDI-MS</text></g>
+        <g class="node industry small" id="translation" data-category="industry communication" data-title="Translation to Practice" data-text="Connecting academic evidence with application." tabindex="0" role="button"><circle cx="608" cy="374" r="31"/><text x="608" y="370">Translation</text><text x="608" y="385">to practice</text></g>
+        <g class="node communication small" id="illustration" data-category="communication" data-title="Scientific Illustration" data-text="Visual storytelling and educational resources." tabindex="0" role="button"><circle cx="75" cy="445" r="30"/><text x="75" y="441">Scientific</text><text x="75" y="456">illustration</text></g>
+        <g class="node leadership small" id="coaching" data-category="leadership" data-title="Coaching" data-text="Mentoring and inclusive team leadership." tabindex="0" role="button"><circle cx="382" cy="458" r="28"/><text x="382" y="463">Coaching</text></g>
+      </g>
+    </svg>
+    <aside class="node-card" id="node-card" aria-live="polite"><p class="card-kicker">Network node</p><h2>Explore the network</h2><p>Hover, focus or tap a node to reveal the connection.</p></aside>
+  </div>
+
+  <div class="welcome-character"><img src="images/SophiaWelcomeRHS.png" alt="Illustrated character introducing the portfolio"></div>
+</section>
+
+<section class="timeline-section" id="timeline"><p class="eyebrow">Network through time</p><h2>Projects progressively build the network.</h2><p>Project timeline content can be added here next.</p></section>
+<section class="about" id="about"><p class="eyebrow">The metaphor</p><h2>A resilient network is built through crosslinks.</h2><p>Research themes form the backbone, projects create branches, and interdisciplinary work creates crosslinks.</p></section>
+</main>
+<footer><p>© <span id="year"></span> Sophia Van Mourik</p></footer>
+</body>
+</html>

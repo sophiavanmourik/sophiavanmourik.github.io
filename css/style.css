@@ -1,1 +1,62 @@
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f5f2eb;
+    color:#12343d;
+}
 
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:30px 60px;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#33418a;
+    font-weight:600;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:80px;
+}
+
+.hero-text{
+    width:45%;
+}
+
+.hero-text h1{
+    font-size:4rem;
+    line-height:1.1;
+}
+
+.hero-network{
+    width:45%;
+}
+
+.network-placeholder{
+    height:500px;
+
+    background:white;
+
+    border-radius:12px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}

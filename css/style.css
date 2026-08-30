@@ -172,13 +172,15 @@ img{
     max-width:660px;
     height:min(56vh,470px);
     margin:auto;
-    background:rgba(255,253,248,.35);
+    background:transparent;
 }
 
 #polymer-network{
     display:block;
-    width:100%;
-    height:100%;
+    width:180%;
+    height:180%;
+    transform:scale(1.4);
+    transform-origin:center center;
 }
 
 .bonds path{
@@ -312,16 +314,19 @@ img{
 ========================= */
 
 .welcome-character{
-    z-index:5;
+    position:relative;
+    z-index:6;
+
     display:flex;
-    align-self:start;
+    align-self:end;
     align-items:flex-end;
     justify-content:center;
-    height:calc(100vh - 90px);
-    min-height:650px;
-    max-height:850px;
-    margin-top:-60px;
-    margin-left:-60px;
+
+    height:1100px;
+    width:500px;
+
+    margin-top:-80px;
+    margin-left:-180px;
 }
 
 .welcome-character img{
